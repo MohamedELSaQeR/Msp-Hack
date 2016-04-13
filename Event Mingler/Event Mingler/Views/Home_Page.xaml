@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="Event_Mingler.Views.Home_Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Event_Mingler"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF00B0EC" x:Name="kol">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="wideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="1000" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="gun.Width" Value="430"/>
+                        <Setter Target="gun.CornerRadius" Value="50,50,50,0"/>
+                        <Setter Target="gun.Height" Value="350"/>
+                        <Setter Target="her.FontSize" Value="40"/>
+                        <Setter Target="his.Height" Value="130"/>
+                        <Setter Target="tb1.FontSize" Value="90"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="narrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="gun.Width" Value="300"/>
+                        <Setter Target="gun.CornerRadius" Value="40,40,40,0"/>
+                        <Setter Target="gun.Height" Value="300"/>
+                        <Setter Target="her.FontSize" Value="30"/>
+                        <Setter Target="his.Height" Value="100"/>
+                        <Setter Target="tb1.FontSize" Value="60"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="MediumState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="660"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="kol.MaxHeight" Value="1000"/>
+                        <Setter Target="gun.Height" Value="320"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Mobile">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="400"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="kol.MaxHeight" Value="1000"/>
+                        <Setter Target="gun.Height" Value="290"/>
+                        <Setter Target="gun.Width" Value="330"/>
+                        <Setter Target="her.FontSize" Value="30"/>
+                        <Setter Target="his.Height" Value="100"/>
+                        <Setter Target="tb1.FontSize" Value="50"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+            <CommandBar Grid.Row="3" Background="#008aa8">
+            <AppBarButton Tag="Add Notes" Foreground="White" Click="Open_Onenote">
+                <AppBarButton.Icon>
+                    <SymbolIcon Symbol="Add"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            <AppBarButton Content="Add Number" Foreground="White" Click="Open_People">
+                <AppBarButton.Icon>
+                    <SymbolIcon Symbol="PhoneBook"/>
+                </AppBarButton.Icon>
+            </AppBarButton>
+            </CommandBar>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="50,0,0,0">
+            <TextBlock Text="Now you in Room" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontFamily="Arial"/>
+            <TextBlock x:Name="RoomNum" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25" FontFamily="Arial"/>
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <StackPanel>
+                <Border x:Name="gun" CornerRadius="70,70,70,0"  BorderBrush="#008aa8" BorderThickness="50"   HorizontalAlignment="Center" >
+                    <StackPanel  Background="#008aa8" >
+                        <TextBlock x:Name="her" Foreground="#FFE0DBDB" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Go around and find him/her"  FontSize="40" FontFamily="Segoe UI" />
+                        <Border x:Name="his" CornerRadius="40,40,40,1" Margin="10" BorderBrush="White" BorderThickness="10" Height="150"  HorizontalAlignment="Center" >
+                            <TextBlock Margin="20,20,20,20" x:Name="tb1" Foreground="White" HorizontalAlignment="Center" FontWeight="Bold" TextWrapping="Wrap" Text="T" FontFamily="Arial" VerticalAlignment="Center" FontSize="130"/>
+                        </Border>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+        <StackPanel Background="#FF00B0EC" x:Name="Leds" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Ellipse Fill="White" Width="40" Height="40" Margin="5,0,0,0"/>
+            <Ellipse Fill="White" Width="40" Height="40" Margin="5,0,0,0"/>
+            <Ellipse Fill="White" Width="40" Height="40" Margin="5,0,0,0"/>
+            <Ellipse Fill="White" Width="40" Height="40" Margin="5,0,0,0"/>
+            <Ellipse Fill="White" Width="40" Height="40" Margin="5,0,0,0"/>
+        </StackPanel>
+    </Grid>
+</Page>

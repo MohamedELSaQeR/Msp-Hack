@@ -1,0 +1,1460 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "MicrosoftStore"
+    </assembly>
+    <members>
+        <member name="M:Microsoft.Store.Experimentation.Net.Decorators.UserTicket.MockWLIDUserTicketDecorator.Decorate(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;*!System.Runtime.Compil">
+            <summary>
+Modifies a given url and/or its headers
+</summary>
+            <param name="url">The url to decorate</param>
+            <param name="headers">A map of header to header value to modify</param>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.StoreServicesCustomEvents.Log(System.String,Microsoft.Services.Store.Engagement.ExperimentVariation)">
+            <summary>
+Logs the custom event with variation data
+</summary>
+            <param name="eventName">name of the event</param>
+            <param name="experimentVariation">experiment variation data for custom event</param>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.Feedback.LaunchFeedbackAsync(Windows.Foundation.Collections.IMap`2{System.String^,System.String^})">
+            <summary>
+Attempts to launch the Feedback app with the supplied property bag.
+</summary>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.Feedback.LaunchFeedbackAsync">
+            <summary>
+Attempts to launch the Feedback app.
+</summary>
+        </member>
+        <member name="P:Microsoft.Services.Store.Engagement.Feedback.IsSupported">
+            <summary>
+Property indicating if Feedback is supported on the OS.
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.Decorators.UserTicket.WLIDUserTicketDecorator.Decorate(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;*!System.Runtime.CompilerSe">
+            <summary>
+Modifies a given url and/or its headers
+</summary>
+            <param name="url">The url to decorate</param>
+            <param name="headers">A map of header to header value to modify</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.ExperimentationManager.ReadVariationFromDisk(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Reads variation from disk
+</summary>
+            <param name="storeFactory">the factory to use for requests</param>
+            <returns>variation assigned to the experiment</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.ExperimentationManager.GetCachedVariation(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Gets the variation either from cached value on disk or a new http request
+</summary>
+            <param name="storeFactory">the factory to use for requests</param>
+            <returns>variation assigned to the experiment</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.ExperimentationManager.SendExperimentWebRequest(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Makes a new http request to get a variation from the server
+</summary>
+            <param name="storeFactory">the factory to use for requests</param>
+            <returns>variation returned from web request</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.ExperimentationManager.#ctor(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+Constructor
+</summary>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.ExperimentClient.RefreshVariationInternalAsync(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.ExperimentationManager&gt;,std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Gets the refreshed variation
+</summary>
+            <param name="experimentationManager">experimentation manager</param>
+            <param name="storeFactory">store factory</param>
+            <returns>experiment result containing error information and the variation</returns>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.ExperimentClient.GetVariationInternalAsync(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.ExperimentationManager&gt;,std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Gets the variation
+</summary>
+            <param name="experimentationManager">experimentation manager</param>
+            <param name="storeFactory">store factory</param>
+            <returns>experiment result containing error information and the variation</returns>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.ExperimentClient.RefreshVariationAsync">
+            <summary>
+Refreshes the experiment variation
+</summary>
+            <returns>experiment result containing error information and the variation</returns>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.ExperimentClient.GetVariationAsync">
+            <summary>
+Gets the experiment variation
+</summary>
+            <returns>experiment result containing error information and the variation</returns>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.ExperimentClient.#ctor(System.String)">
+            <summary>
+Constructor
+</summary>
+            <param name="apiKey">api key for the experiment</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebClient.PostAsync(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32!System.Runtime.CompilerServices.IsConst,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std">
+            <summary>
+Makes an asynchronous HTTP POST request
+</summary>
+            <param name="url">The url to Post</param>
+            <param name="body">A body to send to in this request.</param>
+            <param name="bodyLength">The length of the body</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <param name="handler">The callback to execute when the web request completes</param>
+            <returns>A shared pointer to an ICancel token that lets you cancel the request</returns>
+            <summary>
+Makes an asynchronous HTTP POST request
+</summary>
+            <param name="url">The url to Post</param>
+            <param name="body">A body to send to in this request.</param>
+            <param name="bodyLength">The length of the body</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <param name="decorators">A list of decorators to apply to the request</param>
+            <param name="handler">The callback to execute when the web request completes</param>
+            <returns>A shared pointer to an ICancel token that lets you cancel the request</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebClient.PostAsync(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32!System.Runtime.CompilerServices.IsConst,std.function&lt;(std.shared_ptr&lt;Microsoft.Store.Experimentation.Net.WebResponse&gt;)(std.shared_ptr&lt;Microsoft.Store.Experimentation.Net.WebResponse&gt;)&gt;)">
+            <summary>
+Makes an asynchronous HTTP POST request
+</summary>
+            <param name="url">The url to Post</param>
+            <param name="body">A body to send to in this request.</param>
+            <param name="bodyLength">The length of the body</param>
+            <param name="handler">The callback to execute when the web request completes</param>
+            <returns>A shared pointer to an ICancel token that lets you cancel the request</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebClient.Post(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32!System.Runtime.CompilerServices.IsConst,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basi">
+            <summary>
+Makes a synchronous HTTP POST request
+</summary>
+            <param name="url">The url to Post</param>
+            <param name="body">A body to send to in this request.</param>
+            <param name="bodyLength">The length of the body</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <param name="ctg">The cancel token group used to cancel this request; optional</param>
+            <returns>A shared pointer to a webresponse with the results of the request</returns>
+            <summary>
+Makes a synchronous HTTP POST request
+</summary>
+            <param name="url">The url to Post</param>
+            <param name="body">A body to send to in this request.</param>
+            <param name="bodyLength">The length of the body</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <param name="decorators">A list of decorators to apply to the request</param>
+            <param name="ctg">The cancel token group used to cancel this request; optional</param>
+            <returns>A shared pointer to a webresponse with the results of the request</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebClient.Post(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32!System.Runtime.CompilerServices.IsConst,std.shared_ptr&lt;Microsoft.Store.Experimentation.Concurrency.CancelTokenGroup&gt;)">
+            <summary>
+Makes a synchronous HTTP POST request
+</summary>
+            <param name="url">The url to Post</param>
+            <param name="body">A body to send to in this request.</param>
+            <param name="bodyLength">The length of the body</param>
+            <param name="ctg">The cancel token group used to cancel this request; optional</param>
+            <returns>A shared pointer to a webresponse with the results of the request</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebClient.GetAsync(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;!System.Runtime.Compile">
+            <summary>
+Makes an asynchronous HTTP GET request
+</summary>
+            <param name="url">The url to get</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <param name="handler">The callback to execute when the web request completes</param>
+            <returns>A shared pointer to an ICancel token that lets you cancel the request</returns>
+            <summary>
+Makes an asynchronous HTTP GET request
+</summary>
+            <param name="url">The url to get</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <param name="decorators">A list of decorators to apply to the request</param>
+            <param name="handler">The callback to execute when the web request completes</param>
+            <returns>A shared pointer to an ICancel token that lets you cancel the request</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebClient.GetAsync(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.function&lt;(std.shared_ptr&lt;Microsoft.Store.Experimentation.Net.WebResponse&gt;)(std.shared_ptr&lt;Microsoft.Store.Experimentation.Net.WebResponse&gt;)&gt;)">
+            <summary>
+Makes an asynchronous HTTP GET request
+</summary>
+            <param name="url">The url to get</param>
+            <param name="handler">The callback to execute when the web request completes</param>
+            <returns>A shared pointer to an ICancel token that lets you cancel the request</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebClient.Get(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;!System.Runtime.CompilerServ">
+            <summary>
+Makes a synchronous HTTP GET request
+</summary>
+            <param name="url">The url to get</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <param name="ctg">The cancel token group used to cancel this request; optional</param>
+            <returns>A shared pointer to a webresponse with the results of the request</returns>
+            <summary>
+Makes a synchronous HTTP GET request
+</summary>
+            <param name="url">The url to get</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <param name="decorators">A list of decorators to apply to the request</param>
+            <param name="ctg">The cancel token group used to cancel this request; optional</param>
+            <returns>A shared pointer to a webresponse with the results of the request</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebClient.Get(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.shared_ptr&lt;Microsoft.Store.Experimentation.Concurrency.CancelTokenGroup&gt;)">
+            <summary>
+Makes a synchronous HTTP GET request
+</summary>
+            <param name="url">The url to get</param>
+            <param name="ctg">The cancel token group used to cancel this request; optional</param>
+            <returns>A shared pointer to a webresponse with the results of the request</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebClient.SetTimeout(System.UInt32)">
+            <summary>
+Set the timeout to use for http operations, in milliseconds
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebClient.#ctor(std.shared_ptr&lt;Microsoft.Store.Experimentation.Net.IWebClient&gt;)">
+            <summary>
+Constructor. Allows user to pass in their own IWebClient.
+</summary>
+            <param name="impl">The IWebClientImpl to use to make http requests</param>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.WebClient">
+            <summary>
+This class makes http calls
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.Decorators.UserTicket.IUserTicketDecorator.Decorate(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;*!System.Runtime.CompilerServi">
+            <summary>
+Modifies a given url and/or its headers
+</summary>
+            <param name="url">The url to decorate</param>
+            <param name="headers">A map of header to header value to modify</param>
+        </member>
+        <member name="F:Microsoft.Store.Experimentation.Net.IWebClientDecorator.k_pairSeparator">
+            <summary>
+Url query parameter key/value separator "="
+</summary>
+        </member>
+        <member name="F:Microsoft.Store.Experimentation.Net.IWebClientDecorator.k_paramSeparator">
+            <summary>
+Url query parameter separator "&amp;"
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.IWebClientDecorator.Decorate(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDerefer">
+            <summary>
+Modifies a given url and/or its headers
+</summary>
+            <param name="url">The url to decorate</param>
+            <param name="headers">A map of header to header value to modify</param>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.IWebClientDecorator">
+            <summary>
+This interface describes methods that modify a HTTP request
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.Assignment.ConstructRequestUrl(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.ExperimentationContext&gt;,std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Constructs the request url
+</summary>
+            <param name="appKey">app Key for the experiment</param>
+            <param name="experimentationContext">context to use for the request</param>
+            <param name="factory">factory to use for the request</param>
+            <returns>returns the request url</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.Assignment.GetRequestData(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferen">
+            <summary>
+Gets the request url and header data
+</summary>
+            <param name="url">request url</param>
+            <param name="headers">request header</param>
+            <param name="factory">factory to use for the request</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.Assignment.InitUserTicket(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Initializes the request url 
+</summary>
+            <param name="factory">factory to use for the request</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.Assignment.SendAssignmentWebRequest(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.ExperimentationContext&gt;,std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Makes the http request to get a new variation
+</summary>
+            <param name="appKey">the appkey for the experiment</param>
+            <param name="experimentationContext">context to use for the request</param>
+            <param name="factory">factory to use for the request</param>
+            <returns>returns the variation received from the server</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockStringResponder.GetLastRequestUrl">
+            <summary>
+returns the last url that was passed to GetResponse(...);
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockStringResponder.GetResponse(Microsoft.Store.Experimentation.Net.HttpRequestMethodType!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,">
+            <summary>
+Get the response.
+</summary>
+            <param name="method">The http method</param>
+            <param name="url">The url to match</param>
+            <param name="headers">The headers to match</param>
+            <returns>A shared pointer to a mock response if the url matches. Nullptr if it doesn't</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockStringResponder.#ctor(Microsoft.Store.Experimentation.Net.HttpRequestMethodType!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Boolean)">
+            <summary>
+Constructor.
+</summary>
+            <param name="method">The http method</param>
+            <param name="url">The url to match</param>
+            <param name="payload">The payload to return</param>
+            <param name="matchStartsWith">If true it will return a the payload if the supplied url matches the start
+of the requesting url</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockStringResponder.#ctor(Microsoft.Store.Experimentation.Net.HttpRequestMethodType!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Boolean,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_trait">
+            <summary>
+Constructor.
+</summary>
+            <param name="method">The http method</param>
+            <param name="url">The url to match</param>
+            <param name="payload">The payload to return</param>
+            <param name="matchStartsWith">If true it will return a the payload if the supplied url matches the start
+<param name="responseHeaders">Extra headers to add to the response</param>
+of the requesting url</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockStringResponder.#ctor(Microsoft.Store.Experimentation.Net.HttpRequestMethodType!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.function&lt;(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_tra">
+            <summary>
+Constructor.
+</summary>
+            <param name="method">The http method</param>
+            <param name="url">The url to match</param>
+            <param name="payload">The payload to return</param>
+            <param name="callback">The callback to run when the response is requested</param>
+            <param name="statusCode">The status code to return</param>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.MockStringResponder">
+            <summary>
+Simple mock responder that returns a response to a given url with a given string payload.
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClient.SetTimeout(System.UInt32)">
+            <summary>
+This method sets the timeout for http operations
+</summary>
+            <param name="timeout">The timeout, in milliseconds</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClient.SendRequest(Microsoft.Store.Experimentation.Net.HttpRequestMethodType!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.ba">
+            <summary>
+This method sends a mock http request.
+</summary>
+            <param name="method">The http verb to use for this request.</param>
+            <param name="url">The url to request</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <param name="body">A body to send to in this request. Currently not used</param>
+            <param name="bodyLength">The length of the body</param>
+            <param name="handler">The callback to execute when the web request completes</param>
+            <returns>A shared pointer to a cancel token to the request</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClient.#ctor(std.shared_ptr&lt;Microsoft.Store.Experimentation.Net.IWebClientFactoryConstructorParam&gt;)">
+            <summary>
+Constructor; uses the passed in factory
+</summary>
+            <param name="param">The WebClientFactoryConstructor param, cast into the MockWebClientResponse</param>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.MockWebClient">
+            <summary>
+An implementation of IWebClient that mocks responses
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientICancelToken.IsCompleted">
+            <summary>
+Returns true if the async operation is completed
+</summary>
+            <returns>Returns true if the async operation is completed</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientICancelToken.IsCancelled">
+            <summary>
+Returns true if the async operation is cancelled
+</summary>
+            <returns>Returns true if the async operation is cancelled</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientICancelToken.Cancel">
+            <summary>
+Cancel the async operation
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.MockWebClientICancelToken">
+            <summary>
+A concrete class implementing ICancelToken for MockWebClient
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientResponse.GetDelay">
+            <summary>
+The delay for this reponse
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientResponse.GetResponse(Microsoft.Store.Experimentation.Net.HttpRequestMethodType!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsCons">
+            <summary>
+Iterates through the list of response generators and returns the first non-null response
+</summary>
+            <param name="method">The http verb to use for this request.</param>
+            <param name="url">The url to request</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <returns>A mock response if a generator in the list created a non-null one</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientResponse.ClearGenerators">
+            <summary>
+Clear the generators list
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientResponse.AddResponseGenerator(std.shared_ptr&lt;Microsoft.Store.Experimentation.Net.IMockResponseGenerator&gt;)">
+            <summary>
+Add a response generator to the list
+</summary>
+            <param name="generator">The generator to add</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientResponse.#ctor(System.Int32)">
+            <summary>
+Constructor
+</summary>
+            <param name="delay">
+The number of milliseconds to delay the response. 
+If milliseconds is zero, the web call becomes synchronous
+</param>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.MockWebClientResponse">
+            <summary>
+A singleton class that holds a set of IMockResponseGenerators to generate a response for the MockWebClient
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.IMockResponseGenerator.SetParams(std.shared_ptr&lt;Microsoft.Store.Experimentation.Net.MockWebClientResponseParameters&gt;)">
+            <summary>
+Sets the mock response parameters to use with this response generator
+</summary>
+            <param name="params">The parameters to use with this request</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.IMockResponseGenerator.GetResponse(Microsoft.Store.Experimentation.Net.HttpRequestMethodType!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsCon">
+            <summary>
+Gets a response based on the method, url, and headers if this response generator handles it.
+</summary>
+            <param name="method">The http verb to use for this request.</param>
+            <param name="url">The url to request</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <returns>A shared pointer to the response - nullptr if not handled</returns>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.IMockResponseGenerator">
+            <summary>
+An interface to getting a mock response
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockResponse.GetResponse">
+            <summary>
+Gets the response
+</summary>
+            <returns>A shared pointer to the response</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockResponse.GetParams">
+            <summary>
+Gets the parameters
+</summary>
+            <returns>A shared pointer to the parameters</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockResponse.#ctor(std.shared_ptr&lt;Microsoft.Store.Experimentation.Net.MockWebClientResponseParameters&gt;,std.shared_ptr&lt;Microsoft.Store.Experimentation.Net.WebResponse&gt;)">
+            <summary>
+Constructor
+</summary>
+            <param name="parameters">The parameters to use</param>
+            <param name="response">The response to send</param>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.MockResponse">
+            <summary>
+This class holds a response and a set of parameters
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientResponseParameters.SetValue(Microsoft.Store.Experimentation.Net.MockWebClientValue,System.Int32)">
+            <summary>
+Sets an integer feature
+</summary>
+            <param name="valueName">The value to set</param>
+            <param name="value">The value to set the feature to</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientResponseParameters.SetFeature(Microsoft.Store.Experimentation.Net.MockWebClientResponseFeature,System.Boolean)">
+            <summary>
+Sets a boolean feature
+</summary>
+            <param name="featureName">The feature to set</param>
+            <param name="value">The value to set the feature to</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientResponseParameters.GetValues">
+            <summary>
+Gets the map of integer values set for this request
+</summary>
+            <returns>A const map of value to integer value</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientResponseParameters.GetFeatures">
+            <summary>
+Gets the map of boolean features set for this request
+</summary>
+            <returns>A const map of feature to boolean value</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.MockWebClientResponseParameters.#ctor">
+            <summary>
+Constructor
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.MockWebClientResponseParameters">
+            <summary>
+A set of parameters controlling a mock response
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.MockWebClientValue">
+            <summary>
+Enum of integer values for the mock web client
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.MockWebClientResponseFeature">
+            <summary>
+Enum of boolean features for the mock web client
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.StoreTelemetryDebugLogger.LogChannelUriErrorEvent(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Int32!System.Runtime.CompilerServices.IsLong!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Logs the Channel Uri Error
+</summary>
+            <param name="errorMessage">The error message from the exception</param>
+            <param name="errorCode">The error code from the exception</param>
+            <param name="packageFamilyName">app package family name</param>
+            <returns>true if no error</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.StoreTelemetryDebugLogger.#ctor">
+            <summary>
+Default constructor
+</summary>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.EngagementClient.RegisterNotificationChannelAsync">
+            <summary>
+Registers the notification channel
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.AppendBuffer(System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+Appends a byte buffer to the response
+</summary>
+            <param name="response">The body of the http response</param>
+            <param name="responseLength">The length of the body</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.GetHeader(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Gets a header value if it exists in the response.
+</summary>
+            <param name="headerName">The name of the header to get</param>
+            <returns>The header's value if it exists; an empty string if it doesn't</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.ContainsHeader(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Checks to see if a header exists in the response.
+</summary>
+            <param name="headerName">The name of the header to check</param>
+            <returns>True if the header exists; false if not.</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.GetResponse(System.UInt32*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Accessor to get the response body as a byte array
+</summary>
+            <param name="length">The length of the body</param>
+            <returns>The response body as a pointer</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.GetResponseAsVector">
+            <summary>
+Accessor to get the response body as a vector of bytes
+</summary>
+            <returns>The response body</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.GetResponseAsString">
+            <summary>
+Accessor to get the response body as a wstring
+</summary>
+            <returns>The response body</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.GetResponseType">
+            <summary>
+Accessor to get the http response type
+</summary>
+            <returns>The response type</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.GetStatus">
+            <summary>
+Accessor to get the http status code
+</summary>
+            <returns>The status code</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.GetError">
+            <summary>
+Gets the error if there is one
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.WasSuccessful">
+            <summary>
+Checks that the status isn't an HRESULT and the status code is an expected 200-range value
+</summary>
+            <returns>True if status code is an expected 200-range value</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.IsDataAvailable">
+            <summary>
+Checks to see if the status isn't an HRESULT and the status code is 200 and the body isn't empty
+</summary>
+            <returns>True if status code is 200 and the body isn't empty</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.#ctor(Microsoft.Store.Experimentation.Net.HttpStatusCode,System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32!System.Runtime.CompilerServices.IsConst,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.R">
+            <summary>
+Constructor. Initializes a status and response and the response headers
+</summary>
+            <param name="status">The status code of the http response</param>
+            <param name="response">The body of the http response</param>
+            <param name="responseLength">The length of the body</param>
+            <param name="headers">The headers of the http response</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.#ctor(Microsoft.Store.Experimentation.Net.HttpStatusCode,System.Byte!System.Runtime.CompilerServices.IsConst*,System.UInt32!System.Runtime.CompilerServices.IsConst)">
+            <summary>
+Constructor. Initializes a status and response.
+</summary>
+            <param name="status">The status code of the http response</param>
+            <param name="response">The body of the http response</param>
+            <param name="responseLength">The length of the body</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.#ctor(Microsoft.Store.Experimentation.Net.HttpStatusCode)">
+            <summary>
+Constructor. Initializes a status. Useful for when there is only a status and no response
+</summary>
+            <param name="status">The status code of the http response</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WebResponse.#ctor(Microsoft.Store.Experimentation.WException)">
+            <summary>
+Constructor. Initializes a webresponse with a given exception.
+</summary>
+            <param name="status">The exception</param>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.WebResponse">
+            <summary>
+This class holds the data from an http response.
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.WebUrlAndHeaders">
+            <summary>
+A struct to hold a url and headers
+Replaces a tuple that was used previously to avoid C4503 compiler warnings
+</summary>
+        </member>
+        <member name="D:Microsoft.Store.Experimentation.Net.WebClientHeaders">
+            <summary>
+A typedef defining a collection of WebClientHeaders
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WinRTWebClient.SetTimeout(System.UInt32)">
+            <summary>
+This method sets the timeout for http operations
+</summary>
+            <param name="timeout">The timeout, in milliseconds</param>
+            <summary>
+This method sets the timeout for http operations
+</summary>
+            <param name="timeout">The timeout, in seconds</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WinRTWebClient.SendRequest(Microsoft.Store.Experimentation.Net.HttpRequestMethodType!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.b">
+            <summary>
+This method sends an http request.
+</summary>
+            <param name="method">The http verb to use for this request.</param>
+            <param name="url">The url to request</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <param name="body">A body to send to in this request. Currently not used</param>
+            <param name="bodyLength">The length of the body</param>
+            <param name="handler">The callback to execute when the web request completes</param>
+            <returns>A shared pointer to an ICancel token that lets you cancel the request</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WinRTWebClient.#ctor(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Constructor; initializes the user agent
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.WinRTWebClient">
+            <summary>
+An implementation of IWebClient that uses WinRT's HttpClient
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WinRTWebClientCancelToken.IsCompleted">
+            <summary>
+Returns true if the async operation is completed
+</summary>
+            <returns>Returns true if the async operation is completed</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WinRTWebClientCancelToken.IsCancelled">
+            <summary>
+Returns true if the async operation is cancelled
+</summary>
+            <returns>Returns true if the async operation is cancelled</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WinRTWebClientCancelToken.Cancel">
+            <summary>
+Cancel the async operation
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.WinRTWebClientCancelToken.#ctor(Concurrency.cancellation_token_source)">
+            <summary>
+Constructor
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.IWebClientFactoryConstructorParam">
+            <summary>
+A dummy interface for restricting the types input to WebClient constructor
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.IWebClient.SetTimeout(System.UInt32)">
+            <summary>
+This method sets the timeout for http operations
+</summary>
+            <param name="timeout">The timeout, in milliseconds</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Net.IWebClient.SendRequest(Microsoft.Store.Experimentation.Net.HttpRequestMethodType!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic">
+            <summary>
+This method sends an http request.
+</summary>
+            <param name="method">The http verb to use for this request.</param>
+            <param name="url">The url to request</param>
+            <param name="headers">Any extra headers to set in this request</param>
+            <param name="body">A body to send to in this request. Currently not used</param>
+            <param name="bodyLength">The length of the body</param>
+            <param name="handler">The callback to execute when the web request completes</param>
+            <returns>A shared pointer to an ICancel token that lets you cancel the request</returns>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.IWebClient">
+            <summary>
+This interface describes methods that send http requests
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.CancelTokenGroup.RegisterCancelToken(std.shared_ptr&lt;Microsoft.Store.Experimentation.Concurrency.ICancelToken&gt;)">
+            <summary>
+Add a cancel token to this group
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.CancelTokenGroup.Cancel">
+            <summary>
+Cancel all tokens
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Concurrency.CancelTokenGroup">
+            <summary>
+This class holds a group of cancel tokens and can cancel them all at once
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.ICancelToken.IsCompleted">
+            <summary>
+Get the completion state of the action
+</summary>
+            <returns>True if completed</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.ICancelToken.IsCancelled">
+            <summary>
+Get the cancel state of the action
+</summary>
+            <returns>True if cancelled</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.ICancelToken.Cancel">
+            <summary>
+Cancel the action.
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Concurrency.ICancelToken">
+            <summary>
+Interface that allows a user to cancel an asynchronous action.
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.TaskHelper.FinishTask{System.Void}(Concurrency.task{System.Void},std.function&lt;(Microsoft.Store.Experimentation.WException)(Microsoft.Store.Experimentation.WException)&gt;,std.function&lt;(void)&gt;)">
+            <summary>
+This is a void specialization of the FinishTask method
+</summary>
+            <param name="previousTask">The task to finish</param>
+            <param name="exceptionHandler">A callback to execute if an exception was thrown on the task chain</param>
+            <param name="cancelHandler">A callback to execute if the task chain was canceled</param>
+            <returns>The return value of the task</returns>
+http://msdn.microsoft.com/en-us/library/Windows/Apps/hh699896.aspx
+In Win8, the message only exists in the debugger; only the HRESULT is preserved.
+In Win8.1, the message is also preserved.
+</member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.TaskHelper.ChainTokenSourceToToken(Concurrency.cancellation_token)">
+            <summary>
+This creates a new cancellation token source that triggers cancel when a 
+given cancel token cancels. This is useful for create_async, which only gives a token.
+</summary>
+            <param name="token">The token to chain to</param>
+            <returns>A new cancellation token source</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.TaskHelper.CancellableDelay(System.Int32,Concurrency.cancellation_token)">
+            <summary>
+Helper function that attempts to wait for a given amount of time. The delay will properly abort early if canceled.
+</summary>
+            <param name="milliseconds">Time to wait in milliseconds</param>
+            <param name="cancellationToken">Token used for checking if the task has been cancelled.</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.TaskHelper.CheckAndHandleCancel(Concurrency.cancellation_token,std.function&lt;(void)&gt;)">
+            <summary>
+Checks to see if the currently executing task has been canceled and handles it.
+</summary>
+            <param name="cancellationToken">Token used for checking if the task has been cancelled.</param>
+            <param name="cancelHandler">A callback to be executed when a task is canceled manually (not through timeout). Optional.</param>
+        </member>
+        <member name="F:Microsoft.Store.Experimentation.Concurrency.TaskHelper.k_waitTime">
+            <summary>
+This constant defines the number of milliseconds to wait
+before checking for cancels in methods that require polling spin-waits
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Concurrency.TaskHelper">
+            <summary>
+This class provides convenience functions for using the ppltasks library
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.SignalEvent.Wait(System.UInt32!System.Runtime.CompilerServices.IsLong)">
+            <summary>
+Waits for the event to be signalled.
+</summary>
+            <param name="dwMilliseconds">The length of time (in milliseconds) to wait.</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.SignalEvent.Wait">
+            <summary>
+Waits for the event to be signalled.
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.SignalEvent.Signal">
+            <summary>
+Signals the event.
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.SignalEvent.Dispose">
+            <summary>
+Destructor. Closes the event handle.
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.SignalEvent.#ctor">
+            <summary>
+Constructor. Creates an event.
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Concurrency.SignalEvent">
+            <summary>
+Concrete implementation of the SignalEvent
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.ISignalEvent.Wait">
+            <summary>
+Waits until the event is in the signalled state
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.ISignalEvent.Signal">
+            <summary>
+Sets the event to the signalled state
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Concurrency.ISignalEvent">
+            <summary>
+This interface represents a waitable event
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Concurrency.PPLTaskHelper.complete_after(System.UInt32)">
+            <summary>
+Creates a task that completes after the specified delay.
+Taken from https://msdn.microsoft.com/en-us/library/hh873170.aspx
+</summary>
+            <param name="timeout">The timeout, in milliseconds</param>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Concurrency.PPLTaskHelper">
+            <summary>
+This class contains some static methods to help with some common
+PPL task helper operations
+</summary>
+        </member>
+        <member name="P:Microsoft.Services.Store.Engagement.EngagementResult.ErrorMessage">
+            <summary>
+Error Message
+</summary>
+        </member>
+        <member name="P:Microsoft.Services.Store.Engagement.EngagementResult.ErrorCode">
+            <summary>
+Error Code
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeFeedbackClient.GetFeedbackUrl(std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Returns feedback url to launch the Feedback app.
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeFeedbackClient.IsSupported(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+Property indicating if Feedback is supported on the OS.
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeFeedbackClient.IsSupported">
+            <summary>
+Property indicating if Feedback is supported on the OS.
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeFeedbackClient.VerifyAppendQueryStringParameters(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;*!System.Runtime.CompilerS">
+            <summary>
+Appends query string parameters to the supplied uri throwing an exception if
+the property bag contains a reserved query string parameter.
+</summary>
+        </member>
+        <member name="F:Microsoft.Store.Experimentation.Core.NativeFeedbackClient.isSupported">
+            <summary>
+Storage of if current build of OS supports Feedback.
+</summary>
+        </member>
+        <member name="F:Microsoft.Store.Experimentation.Core.NativeFeedbackClient.isSupportedInitialised">
+            <summary>
+Tracks if we've already looked up the build number of the OS.
+</summary>
+        </member>
+        <member name="F:Microsoft.Store.Experimentation.Core.NativeFeedbackClient.k_minRevision">
+            <summary>
+Minimum revision supported by the feedback API.
+</summary>
+        </member>
+        <member name="F:Microsoft.Store.Experimentation.Core.NativeFeedbackClient.k_minBuildNum">
+            <summary>
+Minimum build number supported by the feedback API.
+</summary>
+        </member>
+        <member name="F:Microsoft.Store.Experimentation.Core.NativeFeedbackClient.k_minMinorVersion">
+            <summary>
+Minimum minor version supported by the feedback API.
+</summary>
+        </member>
+        <member name="F:Microsoft.Store.Experimentation.Core.NativeFeedbackClient.k_minMajorVersion">
+            <summary>
+Minimum major version supported by the feedback API.
+</summary>
+        </member>
+        <member name="F:Microsoft.Store.Experimentation.Core.NativeFeedbackClient.k_feedbackUrlRoot">
+            <summary>
+Root url used to launch the feedback app.
+</summary>
+        </member>
+        <member name="F:Microsoft.Store.Experimentation.Core.NativeFeedbackClient.k_reservedQueryStringParameters">
+            <summary>
+List of reserved query string parameters.
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Utils.UtilitiesCX">
+Class for containing utility functions.
+</member>
+        <member name="P:Microsoft.Services.Store.Engagement.ExperimentVariationResult.Variation">
+            <summary>
+Experiment Variation
+</summary>
+        </member>
+        <member name="P:Microsoft.Services.Store.Engagement.ExperimentVariationResult.ErrorMessage">
+            <summary>
+Error Message
+</summary>
+        </member>
+        <member name="P:Microsoft.Services.Store.Engagement.ExperimentVariationResult.ErrorCode">
+            <summary>
+Error Code
+</summary>
+        </member>
+        <member name="T:Microsoft.Services.Store.Engagement.EngagementErrorCode">
+            <summary>
+      An enumeration of error codes.
+    </summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.WException">
+            <summary>
+This class is an exception that holds a message as a wide string.
+</summary>
+        </member>
+        <member name="F:ValidationFailure">
+            <summary>
+      Error occurred during validation of the payload.
+    </summary>
+        </member>
+        <member name="F:FileOperationFailure">
+            <summary>
+      Error occurred while performing a file operation.
+    </summary>
+        </member>
+        <member name="F:Canceled">
+            <summary>
+      Action was cancelled.
+    </summary>
+        </member>
+        <member name="F:Success">
+            <summary>
+      Action succeeded.
+    </summary>
+        </member>
+        <member name="F:Other">
+            <summary>
+      The error code for errors not covered by other codes.
+    </summary>
+        </member>
+        <member name="F:InvalidServerResponse">
+            <summary>
+      The server returned a response that could not be parsed or contained data that was invalid.
+    </summary>
+        </member>
+        <member name="F:ServerSideError">
+            <summary>
+      An error occurred on the server while handling the request.
+    </summary>
+        </member>
+        <member name="F:ClientConfiguration">
+            <summary>
+      One of the required parameters set by the app developer is not valid or not set.
+    </summary>
+        </member>
+        <member name="F:NetworkConnectionFailure">
+            <summary>
+      An error occurred when making a network request.
+    </summary>
+        </member>
+        <member name="F:Unknown">
+            <summary>
+      Default value. Cause of error is unknown.
+    </summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.StoreTelemetryTraceLogger.LogChannelUriErrorEvent(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Int32!System.Runtime.CompilerServices.IsLong!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Logs the Channel Uri Error
+</summary>
+            <param name="errorMessage">The error message from the exception</param>
+            <param name="errorCode">The error code from the exception</param>
+            <param name="packageFamilyName">app package family name</param>
+            <returns>true if no error</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.StoreTelemetryTraceLogger.#ctor">
+            <summary>
+Default constructor
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.IStoreTelemetryLogger.LogChannelUriErrorEvent(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Int32!System.Runtime.CompilerServices.IsLong!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Logs the channel uri error event to UTC using trace logging
+</summary>
+            <param name="errorMessage">The error message from the exception</param>
+            <param name="errorCode">The error code from the exception</param>
+            <param name="packageFamilyName">app package family name</param>
+            <returns>true if no error</returns>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Utils.IStoreTelemetryLogger">
+            <summary>
+This interface describes methods for trace logging for Store Telemetry
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.LocaleLocator.GetTimeZone">
+            <summary>
+Gets the timezone information
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.LocaleLocator.GetUserLocale">
+            <summary>
+Gets the locale information
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeNotification.SendNotificationEvent(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;,std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.LoggerFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Send notification telemetry event to UTC using LoggingChannel
+</summary>
+            <param name="storeFactory">store factory</param>
+            <param name="loggerFactory">The logger factory to log the telemetry event</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeNotification.SetChannelUri(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.LoggerFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Sets the WNS Channel uri, if unable to retrieve the channel uri, throws exception and logs telemetry event
+</summary>
+            <param name="loggerFactory">The logger factory to log the telemetry event</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeNotification.RegisterNotificationChannelInternal(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;,std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.LoggerFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Registers notification channel
+</summary>
+            <param name="storeFactory">store factory</param>
+            <param name="loggerFactory">The logger factory to log the telemetry event</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeNotification.RegisterNotificationChannelInternal">
+            <summary>
+Registers notification channel
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeNotification.#ctor">
+            <summary>
+Constructor
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.Utilities.AppendHttpDelimitedString(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+Helper method to form the http request string.
+</member>
+        <member name="T:Microsoft.Store.Experimentation.Utils.Utilities">
+Class for containing utility functions.
+</member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.CustomEventTraceLogger.AddInternalEventData(std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Appends store metadata required for all unsampled telemetry events
+</summary>
+            <param name="customEventFields">The event fields</param>
+            <param name="storeFactory">store factory</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.CustomEventTraceLogger.LogCustomEvent(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;*!">
+            <summary>
+Logs the telemetry event to UTC using logging channel
+</summary>
+            <param name="customEventName">The name of the event</param>
+            <param name="customEventFields">The event fields</param>
+            <param name="storeFactory">store factory</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.CustomEventTraceLogger.#ctor(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Default constructor, sets the logging channel instance with the provider name
+</summary>
+            <param name="providerName">telemetry provider name</param>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Core.LoggerFactory">
+            <summary>
+A class that holds all factory information for telemetry
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeCustomEvents.LogCustomEvent(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;,std.sh">
+            <summary>
+Send custom event to UTC using LoggingChannel
+</summary>
+            <param name="eventName">name of the event</param>
+            <param name="eventFields">key value pairs of event metadata</param>
+            <param name="storeFactory">store factory</param>
+            <param name="loggerFactory">The logger factory to log the telemetry event</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeCustomEvents.AddVariationContext(Microsoft.Services.Store.Engagement.ExperimentVariation)">
+            <summary>
+Add the variation context for the event fields
+</summary>
+            <param name="variationContext">additional variation context for the event passed in by the developer</param>
+            <returns>Returns a map of event fields with variation data</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeCustomEvents.SendCustomEvent(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,Microsoft.Services.Store.Engagement.ExperimentVariation)">
+            <summary>
+Send custom event to UTC using LoggingChannel
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeCustomEvents.#ctor">
+            <summary>
+Constructor
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeVariation.GetIsStale">
+            <summary>
+Returns if the cached variation has expired or not
+</summary>
+            <returns>true if cached variation has expired</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeVariation.FromJson(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Converts the json data into business objects
+</summary>
+            <param name="data">json string</param>
+            <returns>returns true if a valid variation was successfully parsed</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeVariation.GetInteger(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Int32*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Gets the variation variable value for the given name of type integer 
+</summary>
+            <param name="name">key name of the variation variable</param>
+            <param name="defaultValue">default value to be used if key is not found</param>
+            <returns>variable int value</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeVariation.GetDouble(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Double*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Gets the variation variable value for the given name of type double 
+</summary>
+            <param name="name">key name of the variation variable</param>
+            <param name="defaultValue">default value to be used if key is not found</param>
+            <returns>variable double value</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeVariation.GetBoolean(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,System.Boolean*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Gets the variation variable value for the given name of type boolean 
+</summary>
+            <param name="name">key name of the variation variable</param>
+            <param name="defaultValue">default value to be used if key is not found</param>
+            <returns>variable boolean value</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeVariation.GetString(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Gets the variation variable value for the given name of type string 
+</summary>
+            <param name="name">key name of the variation variable</param>
+            <param name="defaultValue">default value to be used if key is not found</param>
+            <returns>variable string value</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.NativeVariation.#ctor(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Default constructor
+</summary>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.ExperimentVariation.GetInteger(System.String,System.Int32)">
+            <summary>
+Gets the experiment variation settings value for the given name of type integer 
+</summary>
+            <param name="name">name of the variation setting</param>
+            <param name="defaultValue">default value to be used if setting does not exist or is invalid</param>
+            <returns>setting int value, or default value if something went wrong</returns>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.ExperimentVariation.GetDouble(System.String,System.Double)">
+            <summary>
+Gets the experiment variation settings value for the given name of type double 
+</summary>
+            <param name="name">name of the variation setting</param>
+            <param name="defaultValue">default value to be used if setting does not exist or is invalid</param>
+            <returns>setting double value, or default value if something went wrong</returns>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.ExperimentVariation.GetBoolean(System.String,System.Boolean)">
+            <summary>
+Gets the experiment variation settings value for the given name of type boolean 
+</summary>
+            <param name="name">name of the variation setting</param>
+            <param name="defaultValue">default value to be used if setting does not exist or is invalid</param>
+            <returns>setting boolean value, or default value if something went wrong</returns>
+        </member>
+        <member name="M:Microsoft.Services.Store.Engagement.ExperimentVariation.GetString(System.String,System.String)">
+            <summary>
+Gets the experiment variation settings value for the given name of type string 
+</summary>
+            <param name="name">name of the variation setting</param>
+            <param name="defaultValue">default value to be used if setting does not exist or is invalid</param>
+            <returns>setting string value, or default value if something went wrong</returns>
+        </member>
+        <member name="P:Microsoft.Services.Store.Engagement.ExperimentVariation.NeedsRefresh">
+            <summary>
+Property indicating if the current experiment variation needs to be refreshed
+</summary>
+        </member>
+        <member name="P:Microsoft.Services.Store.Engagement.ExperimentVariation.ApiKey">
+            <summary>
+Api Key for the experiment
+</summary>
+        </member>
+        <member name="P:Microsoft.Services.Store.Engagement.ExperimentVariation.VariationName">
+            <summary>
+The name of the variation
+</summary>
+        </member>
+        <member name="P:Microsoft.Services.Store.Engagement.ExperimentVariation.ExperimentName">
+            <summary>
+The name of the experiment
+</summary>
+        </member>
+        <member name="P:Microsoft.Services.Store.Engagement.ExperimentVariation.ExperimentId">
+            <summary>
+Experiment Id
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Net.ITemplateToken">
+            <summary>
+ITemplateToken represents a token replacement handler for the template url system
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.LoggingChannel.Init">
+            <summary>
+Initializes the logging channel with provider name and guid
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.LoggingChannel.CustomEvent(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;!System.Runtime.Com">
+            <summary>
+This is the implementation for sending a Trace message for events
+</summary>
+            <param name="customEventName">The name of the event</param>
+            <param name="customEventFields">The event fields</param>
+            <returns>true if no error</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.LoggingChannel.Dispose">
+            <summary>
+Destructor.
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.LoggingChannel.#ctor(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Constructor.
+</summary>
+            <param name="providerName">the provider name to use for the logging channel and events</param>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.LoggingChannel">
+            <summary>
+Class that wraps Logging Channel. Automatically fills in a few fields	
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.AppPackageCX.GetAppPackageFamilyNameWithUnderScoreForTelemetry(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Gets the package family name with underscores for telemetry 
+</summary>
+            <param name="packageFamilyName">app package family name</param>
+            <returns>app package family name for telemetry</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.AppPackageCX.GetAppPackageFamilyName">
+            <summary>
+Gets the application package family name
+</summary>
+            <returns>the package family name</returns>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Utils.AppPackageCX">
+Class for application package functions.
+</member>
+        <member name="M:Microsoft.Store.Experimentation.Core.ExperimentationContext.ReadFromDisk(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Read from disk
+</summary>
+            <param name="factory">store factory</param>
+            <param name="fileName">name of the file to write to</param>
+            <returns>file content</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.ExperimentationContext.WriteToDisk(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Writes to disk
+</summary>
+            <param name="factory">store factory</param>
+            <param name="fileName">name of the file to write to</param>
+            <param name="fileContent">text input for the file</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.ExperimentationContext.GetDeviceId">
+            <summary>
+Gets the device id 
+</summary>
+            <returns>device id</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.ExperimentationContext.InitDeviceId(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Initializes device id 
+</summary>
+            <param name="factory">store factory</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.ExperimentationContext.ReadDeviceIdFromDisk(std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Reads the cached device id from the file on disk 
+</summary>
+            <param name="factory">store factory</param>
+            <returns>true if file was read from disk</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.ExperimentationContext.WriteVariationAssignment(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Writes variation to the assignment file on disk 
+</summary>
+            <param name="appKey">appKey for the experiment</param>
+            <param name="variation">variation</param>
+            <param name="factory">store factory</param>
+            <returns>true if file was written to disk</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.ExperimentationContext.ReadVariationAssignment(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Reads the cached variation from the assignment file on disk 
+</summary>
+            <param name="appKey">appKey for the experiment</param>
+            <param name="factory">store factory</param>
+            <returns>native variation from file</returns>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Core.StoreFactory">
+            <summary>
+A class that holds all factory information for a variation request
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Strict.Core.StringHelpers.ExtractUrlArgValue(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Utility function; gets the value of a given key from a url's query parameters
+</summary>
+            <param name="url">The url to check</param>
+            <param name="arg">The query arg to look up</param>
+            <returns>The value of the arg if it exists; empty string if it doesn't</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.CustomEventDebugLogger.AddInternalEventData(std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.shared_ptr&lt;Microsoft.Store.Experimentation.Core.StoreFactory!System.Runtime.CompilerServices.IsConst&gt;)">
+            <summary>
+Appends store metadata required for all unsampled telemetry events
+</summary>
+            <param name="customEventFields">The event fields</param>
+            <param name="storeFactory">store factory</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.CustomEventDebugLogger.InitLoggerWithProvider">
+            <summary>
+Initiliazes logging channel with provider name
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.CustomEventDebugLogger.LogCustomEvent(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;*!">
+            <summary>
+Logs the telemetry event to UTC using logging channel
+</summary>
+            <param name="customEventName">The name of the event</param>
+            <param name="customEventFields">The event fields</param>
+            <param name="storeFactory">store factory</param>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.CustomEventDebugLogger.#ctor(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Constructor
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Utils.ICustomEventLogger.LogCustomEvent(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced,std.map&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;,std.less&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;,std.allocator&lt;std.pair&lt;std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst,std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;&gt;&gt;&gt;*!Syst">
+            <summary>
+Logs the telemetry event to UTC using logging channel
+</summary>
+            <param name="customEventName">The name of the event</param>
+            <param name="customEventFields">The event fields</param>
+            <param name="storeFactory">store factory</param>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.Utils.ICustomEventLogger">
+            <summary>
+This interface describes methods for trace logging for Telemetry
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.TraceLogging.ChannelUriErrorEvent(System.Char!System.Runtime.CompilerServices.IsConst*,System.Int32!System.Runtime.CompilerServices.IsLong,System.Char!System.Runtime.CompilerServices.IsConst*,System.Char!System.Runtime.CompilerServices.IsConst*)">
+            <summary>
+This is the implementation for sending a Trace message for the experimentation event
+</summary>
+            <param name="errorMessage">The error message from the exception</param>
+            <param name="errorCode">The error code from the exception</param>
+            <param name="packageFamilyName">app package family name</param>
+            <param name="sdkVersion">sdk version</param>
+            <returns>true if no error</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.TraceLogging.GetInstance">
+            <summary>
+Gets the singleton instance
+</summary>
+            <returns>A pointer to the TraceLogging singleton instance</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.TraceLogging.Dispose">
+            <summary>
+Private destructor.
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.TraceLogging.#ctor">
+            <summary>
+Private constructor. This is a singleton.
+</summary>
+        </member>
+        <member name="T:Microsoft.Store.Experimentation.TraceLogging">
+            <summary>
+Class that wraps Trace logging. Automatically fills in a few fields
+Singleton.
+</summary>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.WinRTJsonParser.Convert(Windows.Data.Json.IJsonValue)">
+            <summary>
+Converts winrt IJsonValue to native 
+</summary>
+            <param name="value">winrt IJsonValue</param>
+            <returns>parsed native json value</returns>
+        </member>
+        <member name="M:Microsoft.Store.Experimentation.Core.WinRTJsonParser.Parse(std.basic_string&lt;System.Char,std.char_traits{System.Char},std.allocator&lt;System.Char&gt;&gt;!System.Runtime.CompilerServices.IsConst*!System.Runtime.CompilerServices.IsImplicitlyDereferenced)">
+            <summary>
+Parses the json data string 
+</summary>
+            <param name="data">json string</param>
+            <returns>parsed native json value</returns>
+        </member>
+    </members>
+</doc>
